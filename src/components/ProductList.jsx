@@ -13,8 +13,8 @@ export function ProductList() {
   }, []);
 
   const getProducts = async () => {
-    const products = await getProductsFromApi();
-    setProducts(products);
+    // const products = await getProductsFromApi();
+    setProducts([{"id":1, "name":"sugar", "price":44}]);
   };
 
   const deleteHandler = async (id) => {
